@@ -6,13 +6,13 @@ print(sample_list[-1])
 print(sample_list[-2])
 
 sample_list[2] = 10
-print(sample_list) # sample_list[2] = 10 changes sample_;list.
+print(sample_list) # sample_list[2] = 10 changes sample_list.
 
 try:
     sample_list[5]
-except IndexError as em:
+except IndexError as e:
     print('If we try to do sample_list[5], the following message is written:')
-    print(em)
+    print(e)
 
 print(sample_list[1:4])
 print(sample_list[2:1])
