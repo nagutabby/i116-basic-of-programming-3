@@ -12,14 +12,14 @@ print(sample_tuple[-2])
 
 try:
     # Unsupported target for indexed assignment ("tuple[int, str, float]")
-    sample_tuple[2] = 1.41421356
+    sample_tuple[2] = 1.41421356 # type: ignore
 except TypeError as e:
     print('If we try to do sample_tuple[2] = 1.41421356, the following message is written:')
     print(e)
 
 try:
     # Tuple index out of range
-    sample_tuple[3]
+    sample_tuple[3] # type: ignore
 except IndexError as e:
     print('If we try to do sample_tuple[3], the following message is written:')
     print(e)
