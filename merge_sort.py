@@ -26,5 +26,5 @@ def merge_sort(l: list[int]) -> list[int]:
         return merge(merge_sort(first_list), merge_sort(second_list))
 
 l: list[int] = [4,7,5,1,0,3,6,2]
-print('Input: ', l)
-print('Output: ', merge_sort(l))
+print(f'Input: {l}')
+print(f'Output: {merge_sort(l)}')

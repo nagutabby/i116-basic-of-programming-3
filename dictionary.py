@@ -8,9 +8,9 @@ print(sample_dict1['z'])
 
 try:
     print(sample_dict1['a'])
-except KeyError as em:
+except KeyError as e:
     print("If we do sample_dict1['a'], we have the follwing message:")
-    print(em)
+    print(e)
 
 sample_dict1['a'] = 2.71
 print(sample_dict1)

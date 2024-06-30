@@ -17,7 +17,7 @@ def quick_sort(l: list[int]) -> list[int]:
     if len(l) <= 1:
         return l
     else:
-        pair: tuple[list[int], list[int]] = partition(l[0],l[1:])
+        pair: tuple[list[int], list[int]] = partition(l[0], l[1:])
         return quick_sort(pair[0]) + [l[0]] + quick_sort(pair[1])
 
 l: list[int] = [4, 7, 5, 1, 0, 3, 6, 2]
